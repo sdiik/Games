@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PublisherItemCollectionCell" id="T3C-fC-fB9" customClass="PublisherItemCollectionCell" customModule="Games" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="175" height="24"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="Yrb-FH-JG9">
+                <rect key="frame" x="0.0" y="0.0" width="175" height="24"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNC-Us-3cO">
+                        <rect key="frame" x="4" y="0.0" width="167" height="20"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTx-Jh-3tJ">
+                        <rect key="frame" x="4" y="0.0" width="167" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="zuY-8N-rpo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" name="grey_color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="cTx-Jh-3tJ" secondAttribute="bottom" id="1fe-7k-nIe"/>
+                    <constraint firstItem="KNC-Us-3cO" firstAttribute="bottom" secondItem="cTx-Jh-3tJ" secondAttribute="bottom" id="7Yg-CE-Cxa"/>
+                    <constraint firstItem="KNC-Us-3cO" firstAttribute="trailing" secondItem="cTx-Jh-3tJ" secondAttribute="trailing" id="MTA-mw-3XV"/>
+                    <constraint firstItem="KNC-Us-3cO" firstAttribute="leading" secondItem="cTx-Jh-3tJ" secondAttribute="leading" id="YCJ-xF-lod"/>
+                    <constraint firstItem="cTx-Jh-3tJ" firstAttribute="leading" secondItem="Yrb-FH-JG9" secondAttribute="leading" constant="4" id="iZv-AJ-ekP"/>
+                    <constraint firstAttribute="trailing" secondItem="cTx-Jh-3tJ" secondAttribute="trailing" constant="4" id="mZf-EN-kdA"/>
+                    <constraint firstItem="KNC-Us-3cO" firstAttribute="top" secondItem="cTx-Jh-3tJ" secondAttribute="top" id="mjm-n7-3D3"/>
+                    <constraint firstItem="cTx-Jh-3tJ" firstAttribute="top" secondItem="Yrb-FH-JG9" secondAttribute="top" id="wok-09-YCf"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="175" height="24"/>
+            <connections>
+                <outlet property="publisherView" destination="KNC-Us-3cO" id="qxj-ZV-HeD"/>
+                <outlet property="titlePublisherLabel" destination="cTx-Jh-3tJ" id="LWh-QU-I5H"/>
+            </connections>
+            <point key="canvasLocation" x="102.17391304347827" y="64.955357142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="grey_color">
+            <color red="0.54100000858306885" green="0.58799999952316284" blue="0.59200000762939453" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

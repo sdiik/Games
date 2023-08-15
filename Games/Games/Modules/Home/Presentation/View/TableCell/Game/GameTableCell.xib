@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GameTableCell" rowHeight="115" id="Wys-pe-v6m" customClass="GameTableCell" customModule="Games" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="483" height="115"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wys-pe-v6m" id="LP0-lO-UJ6">
+                <rect key="frame" x="0.0" y="0.0" width="483" height="115"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c9B-SF-3y5">
+                        <rect key="frame" x="8" y="8" width="100" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="E9p-xP-QEM"/>
+                            <constraint firstAttribute="width" constant="100" id="TAG-4r-3ia"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="pOJ-rt-MLG">
+                        <rect key="frame" x="116" y="8" width="359" height="61.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhR-o2-yoX">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" name="black_color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18W-T9-aop">
+                                <rect key="frame" x="0.0" y="21" width="31" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" name="grey_color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="zyO-vW-I2z">
+                                <rect key="frame" x="0.0" y="39.5" width="57" height="22"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fAh-OV-6Uq">
+                                        <rect key="frame" x="0.0" y="-0.5" width="22" height="22"/>
+                                        <color key="tintColor" name="yellow_color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="4t2-ot-vhH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oh3-e9-uPa">
+                                        <rect key="frame" x="26" y="0.0" width="31" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" name="grey_color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="pOJ-rt-MLG" secondAttribute="trailing" constant="8" id="0Av-4l-DmC"/>
+                    <constraint firstItem="pOJ-rt-MLG" firstAttribute="top" secondItem="c9B-SF-3y5" secondAttribute="top" id="8o3-KD-q1y"/>
+                    <constraint firstItem="pOJ-rt-MLG" firstAttribute="leading" secondItem="c9B-SF-3y5" secondAttribute="trailing" constant="8" id="H4I-VL-uo5"/>
+                    <constraint firstItem="c9B-SF-3y5" firstAttribute="top" secondItem="LP0-lO-UJ6" secondAttribute="top" constant="8" id="ayf-a7-hWA"/>
+                    <constraint firstItem="c9B-SF-3y5" firstAttribute="centerY" secondItem="LP0-lO-UJ6" secondAttribute="centerY" id="gbw-Hs-u99"/>
+                    <constraint firstAttribute="bottom" secondItem="c9B-SF-3y5" secondAttribute="bottom" constant="8" id="hPH-c0-rRR"/>
+                    <constraint firstItem="c9B-SF-3y5" firstAttribute="leading" secondItem="LP0-lO-UJ6" secondAttribute="leading" constant="8" id="ru4-vc-cQt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabel" destination="18W-T9-aop" id="7lK-J8-CAh"/>
+                <outlet property="gameImageView" destination="c9B-SF-3y5" id="klQ-V1-OcM"/>
+                <outlet property="ratingLabel" destination="oh3-e9-uPa" id="ET5-QO-lUB"/>
+                <outlet property="titleLabel" destination="QhR-o2-yoX" id="dDG-QW-iTn"/>
+            </connections>
+            <point key="canvasLocation" x="187.68115942028987" y="125.55803571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <namedColor name="black_color">
+            <color red="0.0040000001899898052" green="0.0040000001899898052" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="grey_color">
+            <color red="0.54100000858306885" green="0.58799999952316284" blue="0.59200000762939453" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="yellow_color">
+            <color red="0.94999998807907104" green="0.61599999666213989" blue="0.070000000298023224" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
